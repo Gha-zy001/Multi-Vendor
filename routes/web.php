@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
   return view('frontend.pages.home');
-});
+})->name('store.home');
 Route::get('/register', function () {
   return view('frontend.pages.register');
 });
 Route::get('/login', function () {
   return view('frontend.pages.login');
-});
+})->name('store.login');
